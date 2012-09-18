@@ -1,3 +1,6 @@
+/*
+Voltage: 5V
+*/
 #include <Servo.h>
 
 Servo myservo;
