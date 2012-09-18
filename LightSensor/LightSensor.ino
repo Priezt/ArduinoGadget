@@ -1,8 +1,11 @@
 /*
 LightSensor
+
 Voltage: 3.3V~5V
 DigitalPin: 9
 AnalogPin: 0
+
+This code can also be used on a TemperatureSensor
 */
 
 int din = 9;
