@@ -8,8 +8,8 @@ AnalogPin: 0
 This code can also be used on a TemperatureSensor
 */
 
-int din = 9;
-int ain = 0;
+int din = 10;
+int ain = 3;
 
 void setup(){
   Serial.begin(9600);
