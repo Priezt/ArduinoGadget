@@ -132,10 +132,7 @@ void LCD_SetPos(unsigned int x0,unsigned int x1,unsigned int y0,unsigned int y1)
 
 void  Write_Data_U16(unsigned int y)
 {
-	unsigned char m,n;
-	m=y>>8;
-	n=y;
-	main_Write_DATA(m,n);
+	main_Write_DATA(y);
 }
 
 void CLR_Screen(unsigned int bColor){
