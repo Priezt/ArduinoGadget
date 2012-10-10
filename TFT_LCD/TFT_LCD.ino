@@ -65,7 +65,7 @@ void main_init(void){
 	delay(10);
 	digitalWrite(LCD_REST,HIGH);
 	delay(20);
-	main_W_com_data(0x00,0x0001);   //Set the OSC bit as ‘1’ to start the internal oscillator
+	main_W_com_data(0x00,0x0001);   //Set the OSC bit as ï¿½1ï¿½ to start the internal oscillator
 	main_W_com_data(0x01,0x0100);   // set SS and SM bit
 	main_W_com_data(0x02,0x0700);   // set 1 line inversion
 	main_W_com_data(0x03,0x1030);   //set GRAM Write direction and BGR=1
@@ -79,7 +79,7 @@ void main_init(void){
 	delay(30);
 	main_W_com_data(0x10, 0x16b0);   // SAP, BT[3:0], AP, DSTB, SLP, STB
 	delay(30);
-	main_W_com_data(0x11, 0x0007);   //Write final user’s setting values to VC bit
+	main_W_com_data(0x11, 0x0007);   //Write final userï¿½s setting values to VC bit
 	main_W_com_data(0x12, 0x013a);   // set Internal reference voltage
 	main_W_com_data(0x13, 0x1a00);   // VDV[4:0] for VCOM amplitude
 	delay(30);
@@ -127,7 +127,7 @@ void LCD_SetPos(unsigned int x0,unsigned int x1,unsigned int y0,unsigned int y1)
 	main_W_com_data(0x53,y1);  // Vertical GRAM Start Address
 	main_W_com_data(0x20,x0);  // GRAM horizontal Address
 	main_W_com_data(0x21,y0);  // GRAM Vertical Address
-	main_Write_COM(0x00,0x22);    // 0x0022,Start to Write Data to GRAM 
+	main_Write_COM(0x0022);    // 0x0022,Start to Write Data to GRAM 
 }
 
 void  Write_Data_U16(unsigned int y)
